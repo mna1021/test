@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:900");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+$size: 5vw;
+$shadow: 5;
+$primary: rgb(255, 255, 255);
+$secondary: black;
+$avatar-size: 32px;
+$body-background: url(background.jpg);
+
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+	background-image: $body-background;
+	font-family: "ubuntu", Arial, sans-serif;
+  overflow-x: hidden;
+
+}
+
+.header {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    img {
+        width: 150px;
+        height: 100px;
+        border-radius: 50px;
+        margin: 0;
+        padding: 0;
+        opacity: 80%;
+    }
+    ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        width: 15em;
+        padding: .25em 3em 0 0;
+        font-size: 1.5em;
+    }
+
+}
+
+.mainBody {
+    display: flex;
+    img {
+        border-radius: 500px;
+        height: 500px;
+    }
+    p {
+      color: #d125e8;
+      padding: 0 5em 2em 2em;
+      font-size: 1.7em;
+    }
+
+}
+
+
+
+.wrapperResume {
+    animation: sliding-background 40s linear infinite;
+    background: url("tech.jpg") no-repeat left / 120%;
+    height: 20vh;
+    text-align: center;
+    width: 35vw;
+    margin: 0 0 0 35em;
+}
+
+button[type=resume] {
+  background: $primary;
+  color: $secondary;
+  font-family: "Montserrat", sans-serif;
+  font-size: $size;
+  letter-spacing: 2vw;
+  line-height: 20vh;
+  margin: 0;
+  mix-blend-mode: lighten;
+  text-transform: uppercase;
+  $text-shadow: ();
+  cursor: pointer;
+  @for $i from 1 through $shadow {
+    $text-shadow: $text-shadow, 1px * $i 1px * $i $secondary;
+  }
+  text-shadow: 0 0 0px, $text-shadow;
+
+  &:before {
+    color: $primary;
+    content: attr(data-text);
+    margin-left: -1%;
+    margin-top: -1%;
+    position: absolute;
+  }
+}
+
+@keyframes sliding-background {
+  0%,
+  100% {
+    background-position: 0 40%;
+  }
+
+  50% {
+    background-position: 100% 40%;
+  }
+
+
+}
+
+@font-face {
+	font-family: "ubuntu";
+	font-style: italic;
+	font-weight: 300;
+	src: local("Lato Light Italic"), local("Lato-LightItalic"),
+		url(https://fonts.gstatic.com/s/ubuntucondensed/v8/u-4k0rCzjgs5J7oXnJcM_0kACGMtT-Dfqw.woff2)
+			format("woff2");
+}
+
+a {
+	text-decoration: none;
+	color: #9ca0b1;
+}
+
+.wrapperIntro {
+	h1 {
+		color: #fff;
+		font-size: 80px;
+		font-family: "ubuntu";
+		text-transform: uppercase;
+    font-weight: 700;
+		font-family: "Josefin Sans", sans-serif;
+		background: linear-gradient(to right,#f54949 10%, #d125e8 50%, #5a98df 60%);
+		background-size: auto auto;
+		background-clip: border-box;
+		background-size: 200% auto;
+		color: #fff;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		animation: textclip 5s linear infinite;
+		display: inline-block;
+	}
+}
+
+@keyframes textclip {
+	to {
+		background-position: 200% center;
+	}
+}
+
+.entireBody {
+  background-color: white;
+  background-image: none;
+  display: flex;
+}
+
+.headContainer{
+  h1 {
+    color: #CE9D65;
+  }
+}
+
+.rightContainer {
+  position: relative;
+  text-align: center;
+  margin: 0;
+  img {
+    height: 1000px;
+    width: 980px;
+    padding: 0;
+  }
+}
+
+.text {
+  margin: 0;
+  position: absolute;
+  color: #95F18E;
+  font-size: 40px;
+  padding: 8em 0 0 5em;
+  li {
+    float: left;
+  }
+}
+
+.workHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: .75em 0 0 0;
+  width: 20em;
+}
+
+.rightContainerTwo {
+  position: relative;
+  text-align: center;
+  img {
+    height: 1000px;
+    width: 980px;
+    padding: 5em 0 0 0;
+  }
+}
+
+.textTwo {
+  position: absolute;
+  color: #F2E1E1;
+  font-size: 40px;
+  padding: 8em 0 0 5em;
+  li {
+    float: left;
+  }
+}
+
+.headContainerThree{
+  h1 {
+    color: #FE5858;
+  }
+}
+
+.rightContainerThree {
+  position: relative;
+  text-align: center;
+  img {
+    height: 1000px;
+    width: 980px;
+    padding: 5em 0 0 0;
+  }
+}
+
+.textThree {
+  position: absolute;
+  color: #F2E1E1;
+  font-size: 40px;
+  padding: 8em 0 0 5em;
+  li {
+    float: left;
+  }
+}
+
+.headContainerFour {
+  h1 {
+    color: #856FE2;
+  }
+}
+
+.rightContainerFour {
+  position: relative;
+  text-align: center;
+  img {
+    height: 1000px;
+    width: 980px;
+    padding: 5em 0 0 0;
+  }
+}
+
+.textFour {
+  position: absolute;
+  color: #B5E2F2;
+  font-size: 40px;
+  padding: 8em 0 0 5em;
+  li {
+    float: left;
+  }
+}
+
+.CourseBody {
+  h1 {
+    color: white;
+    font-size: 70px;
+    text-align: center;
+    padding: 5em 0 0 0;
+    margin: 0;
+  }
+}
+
+.masked-image {
+  position: absolute;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  margin: auto;
+  z-index: 2;
+  
+  background: url('circuit.jpg');
+  background-position: center center;
+  background-size: cover;
+  
+}
+
+.masked-image {
+  mask-image: radial-gradient(#000 60%, transparent 61%); 
+  mask-position: center center;
+  mask-repeat: no-repeat;
+  animation: mask-move 3s cubic-bezier(.5,0,.5,1) infinite alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes mask-move {
+  
+  0%, 30% {
+    mask-size: 160vmax 160vmax;
+  }
+  70%, 100% { 
+    mask-size: 0% 0%;
+  }
+}
+
+/*////////////////////////////////////////*/
+
+.entireCourse:before {
+  content: '';
+  display: block;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+
+img { 
+  max-width: 100%;
+  height: auto;
+}
+
+
+.CourseBody { 
+  padding: 2em; max-width: 30em; margin: auto;
+  h1 { margin-bottom: 2em; }
+}
+
+

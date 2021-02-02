@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:900");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  background-image: url(background.jpg);
+  font-family: "ubuntu", Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header img {
+  width: 150px;
+  height: 100px;
+  border-radius: 50px;
+  margin: 0;
+  padding: 0;
+  opacity: 80%;
+}
+
+.header ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 15em;
+  padding: .25em 3em 0 0;
+  font-size: 1.5em;
+}
+
+.mainBody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mainBody img {
+  border-radius: 500px;
+  height: 500px;
+}
+
+.mainBody p {
+  color: #d125e8;
+  padding: 0 5em 2em 2em;
+  font-size: 1.7em;
+}
+
+.wrapperResume {
+  -webkit-animation: sliding-background 40s linear infinite;
+          animation: sliding-background 40s linear infinite;
+  background: url("tech.jpg") no-repeat left/120%;
+  height: 20vh;
+  text-align: center;
+  width: 35vw;
+  margin: 0 0 0 35em;
+}
+
+button[type=resume] {
+  background: white;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 5vw;
+  letter-spacing: 2vw;
+  line-height: 20vh;
+  margin: 0;
+  mix-blend-mode: lighten;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-shadow: 0 0 0px, 1px 1px black, 2px 2px black, 3px 3px black, 4px 4px black, 5px 5px black;
+}
+
+button[type=resume]:before {
+  color: white;
+  content: attr(data-text);
+  margin-left: -1%;
+  margin-top: -1%;
+  position: absolute;
+}
+
+@-webkit-keyframes sliding-background {
+  0%,
+  100% {
+    background-position: 0 40%;
+  }
+  50% {
+    background-position: 100% 40%;
+  }
+}
+
+@keyframes sliding-background {
+  0%,
+  100% {
+    background-position: 0 40%;
+  }
+  50% {
+    background-position: 100% 40%;
+  }
+}
+
+@font-face {
+  font-family: "ubuntu";
+  font-style: italic;
+  font-weight: 300;
+  src: local("Lato Light Italic"), local("Lato-LightItalic"), url(https://fonts.gstatic.com/s/ubuntucondensed/v8/u-4k0rCzjgs5J7oXnJcM_0kACGMtT-Dfqw.woff2) format("woff2");
+}
+
+a {
+  text-decoration: none;
+  color: #9ca0b1;
+}
+
+.wrapperIntro h1 {
+  color: #fff;
+  font-size: 80px;
+  font-family: "ubuntu";
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Josefin Sans", sans-serif;
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #f54949), color-stop(50%, #d125e8), color-stop(60%, #5a98df));
+  background: linear-gradient(to right, #f54949 10%, #d125e8 50%, #5a98df 60%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: textclip 5s linear infinite;
+          animation: textclip 5s linear infinite;
+  display: inline-block;
+}
+
+@-webkit-keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.entireBody {
+  background-color: white;
+  background-image: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.headContainer h1 {
+  color: #CE9D65;
+}
+
+.rightContainer {
+  position: relative;
+  text-align: center;
+  margin: 0;
+}
+
+.rightContainer img {
+  height: 1000px;
+  width: 980px;
+  padding: 0;
+}
+
+.text {
+  margin: 0;
+  position: absolute;
+  color: #95F18E;
+  font-size: 40px;
+  padding: 8em 0 0 5em;
+}
+
+.text li {
+  float: left;
+}
+
+.workHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: .75em 0 0 0;
+  width: 20em;
+}
+
+.rightContainerTwo {
+  position: relative;
+  text-align: center;
+}
+
+.rightContainerTwo img {
+  height: 1000px;
+  width: 980px;
+  padding: 5em 0 0 0;
+}
+
+.textTwo {
+  position: absolute;
+  color: #F2E1E1;
+  font-size: 40px;
+  padding: 8em 0 0 5em;
+}
+
+.textTwo li {
+  float: left;
+}
+
+.headContainerThree h1 {
+  color: #FE5858;
+}
+
+.rightContainerThree {
+  position: relative;
+  text-align: center;
+}
+
+.rightContainerThree img {
+  height: 1000px;
+  width: 980px;
+  padding: 5em 0 0 0;
+}
+
+.textThree {
+  position: absolute;
+  color: #F2E1E1;
+  font-size: 40px;
+  padding: 8em 0 0 5em;
+}
+
+.textThree li {
+  float: left;
+}
+
+.headContainerFour h1 {
+  color: #856FE2;
+}
+
+.rightContainerFour {
+  position: relative;
+  text-align: center;
+}
+
+.rightContainerFour img {
+  height: 1000px;
+  width: 980px;
+  padding: 5em 0 0 0;
+}
+
+.textFour {
+  position: absolute;
+  color: #B5E2F2;
+  font-size: 40px;
+  padding: 8em 0 0 5em;
+}
+
+.textFour li {
+  float: left;
+}
+
+.CourseBody h1 {
+  color: white;
+  font-size: 70px;
+  text-align: center;
+  padding: 5em 0 0 0;
+  margin: 0;
+}
+
+.masked-image {
+  position: absolute;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  z-index: 2;
+  background: url("circuit.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.masked-image {
+  -webkit-mask-image: radial-gradient(#000 60%, transparent 61%);
+          mask-image: radial-gradient(#000 60%, transparent 61%);
+  -webkit-mask-position: center center;
+          mask-position: center center;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-animation: mask-move 3s cubic-bezier(0.5, 0, 0.5, 1) infinite alternate;
+          animation: mask-move 3s cubic-bezier(0.5, 0, 0.5, 1) infinite alternate;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes mask-move {
+  0%, 30% {
+    -webkit-mask-size: 160vmax 160vmax;
+            mask-size: 160vmax 160vmax;
+  }
+  70%, 100% {
+    -webkit-mask-size: 0% 0%;
+            mask-size: 0% 0%;
+  }
+}
+
+@keyframes mask-move {
+  0%, 30% {
+    -webkit-mask-size: 160vmax 160vmax;
+            mask-size: 160vmax 160vmax;
+  }
+  70%, 100% {
+    -webkit-mask-size: 0% 0%;
+            mask-size: 0% 0%;
+  }
+}
+
+/*////////////////////////////////////////*/
+.entireCourse:before {
+  content: '';
+  display: block;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.CourseBody {
+  padding: 2em;
+  max-width: 30em;
+  margin: auto;
+}
+
+.CourseBody h1 {
+  margin-bottom: 2em;
+}
+/*# sourceMappingURL=main.css.map */
